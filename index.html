@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bruh!</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+
+    <div id="particle-bg">
+
+        <div id="overlay-text">
+            Hey! It's me, Sid!
+            <br><br><br>
+
+            <span class="emph">Just a random person on this thing some call Earth 🌎</span>
+            <hr
+                style="width: 70%;height:1px;border:none;color:rgb(223, 223, 223);background-color:rgb(223, 223, 223);opacity: 0.4;">
+            <br>
+            <span class="emph" style="font-style:italic; font-size: medium;">
+                Psst! You gotta click on those links to go
+                to special places :)
+            </span>
+
+            <div id="nav-flex">
+                <div><a href="" class="middle" data-toggle="modal" data-target="#whoami">Sid who?</a></div>
+                <div><a href="https://sid200.github.io/blog" target="blank" class="middle">Blog</a></div>
+                <div><a class="middle" data-toggle="tooltip" data-placement="bottom"
+                        title="Well that leads to nowhere, currently.">Other Links</a></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Modal BEGIN-->
+    <div class="modal fade" id="whoami" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Who be me?</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><em>Me be me.</em></p>
+                        <footer class="blockquote-footer">Sid</footer>
+                    </blockquote>
+                    Ok jokes aside, I am just a random person who kinda likes Science and Computers, I guess?
+                    That's basically it about me.
+                    <br><br>
+                    Want to know more? Later, prolly. For now, enjoy this: <br><br>
+                    <img src="assets/img/catjam.gif"
+                        style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+                </div>
+                <div class="modal-footer emph">
+                    <em>Psst! You gotta click on that </em>&times;<em> (or tap/click outside) to get back :)</em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal END-->
+</body>
+
+
+<script>
+    particlesJS.load('particle-bg', 'assets/particlesjs-config.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+
+    $(document).ready(function () {
+        $("body").tooltip({
+            selector: '[data-toggle=tooltip]'
+        });
+    });
+</script>
+
+</html>
